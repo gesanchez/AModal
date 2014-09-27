@@ -1,0 +1,29 @@
+<html ng-app="general">
+    <head>
+        <title>Angular Modal</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../stylesheet/style.css"/>
+    </head>
+    <body>
+        <div ng-controller="initial">
+            <div style="width: 400px;left: 50%;top: 50%;position: absolute;height: 300px;margin-left: -200px;margin-top: -150px">
+                <button type="button" ng-click="open()">Open</button>
+                <dialog show="shown" onclose="close()" width='500px' height='60%'>
+                    <p>Modal Content Goes here</p>
+                </dialog>
+                <h3>Modal</h3>
+                <xmp>
+<button type="button" ng-click="open()">Open</button>
+<dialog show="shown" onclose="close()" width='500px' height='60%'>
+    <p>Modal Content Goes here</p>
+</dialog>
+                </xmp>
+            </div>
+        </div>
+        <script type="text/javascript" src="../libs/jquery.js"></script>
+        <script type="text/javascript" src="../libs/angular.min.js"></script>
+        <script type="text/javascript" src="../modal.js"></script>
+        <script type="text/javascript" src="../libs/index.js"></script>
+    </body>
+</html>
